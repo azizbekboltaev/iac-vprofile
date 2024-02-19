@@ -7,9 +7,8 @@ provider "aws" {
   region = var.region
 }
 
-data "aws_availability_zones" "available" {
-  names = "us-east-1a"  "us-east-1b"
-}
+data "aws_availability_zones" "available" {}
+
 
 locals {
   cluster_name = var.clusterName
