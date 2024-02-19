@@ -8,7 +8,7 @@ provider "aws" {
 }
 
 data "aws_availability_zones" "available" {
-  name = "us-east-1a"
+  names = "us-east-1a"
 }
 
 locals {
